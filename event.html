@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function click_button() {
+            alert('welcome to HUangxiaoqin');
+        }
+        function mDown(obj) {
+            obj.style.backgroundColor= "lec5e5";
+            obj.innerHTML="release your mouse"
+        }
+        function mUp(obj) {
+            obj.style.backgroundColor="black";
+            obj.innerHTML= "press here"
+
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body align = "center">
+    <div style="background-color: green;width:200px;height: 50px;margin: 20px;padding-top: 10px;color: aqua;font-weight: bold;font-size: 18
+;text-align: center;"
+         onmouseover="this.innerHTML= 'Good'"
+         onmouseout="this.innerHTML= 'you have moved out'"
+
+         >move your mouse to here</div>
+    <div style="background-color: red;width:200px;height: 50px;margin: 20px;padding-top: 10px;color: aqua;font-weight: bold;font-size: 18
+;text-align: center;"
+
+         onmousedown="mDown(this)"
+         onmouseup="mUp(this)"
+    >press here</div>
+    <button onclick="click_button()">click me</button>
+</body>
+</html>
